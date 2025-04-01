@@ -91,7 +91,7 @@ const FormComponent = () => {
                 <p className="text-red-500 mb-2">{error}</p>
               </div>
             ) : (
-              <div className="flex items-center justify-center gap-4">
+              <div className="flex items-center justify-center gap-4 cursor-pointer">
                 <a
                   href={shortenedUrl}
                   target="_blank"
@@ -104,7 +104,7 @@ const FormComponent = () => {
                 <button
                   onClick={handleCopy}
                   className="p-2 bg-[#9333ea] text-white rounded-md 
-                  hover:bg-[#c084fc] transition-all duration-300"
+                  hover:bg-[#c084fc] transition-all duration-300 cursor-pointer"
                   title="Copy to clipboard"
                 >
                   <svg 
