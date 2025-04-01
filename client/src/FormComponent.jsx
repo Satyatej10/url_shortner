@@ -77,7 +77,7 @@ const FormComponent = () => {
             type="submit"
             className="p-3 bg-[#9333ea] text-white font-bold rounded-md 
             hover:bg-[#c084fc] hover:-translate-y-0.5 hover:shadow-[0_5px_15px_rgba(147,51,234,0.4)] 
-            transition-all duration-300"
+            transition-all duration-300 cursor-pointer"
           >
             Shorten URL
           </button>
