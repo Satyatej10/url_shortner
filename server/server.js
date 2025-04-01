@@ -15,9 +15,10 @@ app.use((req, res, next) => {
 });
 
 // Routes
-app.use("/", require("./routes/urlRoutes"));
 app.get("/", (req, res) => {
     res.send("Server is running");
 });
+
+app.use("/api", require("./routes/urlRoutes"));
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT} 🚀`));
